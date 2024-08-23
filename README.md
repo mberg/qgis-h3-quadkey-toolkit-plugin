@@ -1,8 +1,7 @@
-# H3 Toolkit Plugin for QGIS
-🌐 Brings the H3 discrete global grid system to [QGIS](https://qgis.org/). 
+# H3 Quadkey Toolkit Plugin for QGIS
+🌐 Brings the Quadkey and H3 and discrete global grid systems to [QGIS](https://qgis.org/). 
 
-🚀 Powered by the open source [H3 library](https://h3geo.org/)
-
+🚀 Powered by the open source [H3 library](https://h3geo.org/) and [Mercantile](https://pypi.org/project/mercantile/)
 
 ## How to Install
 Browse and install via the plugin manager of QGIS (Recommended). Look for "[H3 Toolkit](https://plugins.qgis.org/plugins/h3_toolkit/)".
@@ -21,6 +20,12 @@ At startup the plugin detects if `h3` is missing from the python environment and
 **NOTE: The plugin is tested with `h3` version `3.7.x` but in principle should work with other `3.x` versions.**
 
 Please see [H3 Installation](https://h3geo.org/docs/installation) on how to install.
+
+### Installing the `mercantile` dependency
+
+Make sure mercantile is installed to qgis. Eg.
+
+/Applications/QGIS.app/Contents/MacOS/bin/python3.9 -m pip install mercantile
 
 ## How to use
 The plugin registers an `H3` processing provider, tools are available there.
